@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+
+<body>
+	<div>
+	<section class = "center">
+		
+	
+
+<h1><strong> About Us</strong></h1>
+		<div th:if=${session.msg}>
+			<h3 th:text="${session.msg}" style="color:red"></h3>
+   		<div th:text="${@sessionUtilityBean.removeVerificationMessageFromSession()}"></div>
+   		</div>
+	<br>	
+	</section>
+	<section class="center" style="background-color: white">
+	<marquee style="color: coral;"><strong> Election Commission of India is an autonomous constitutional authority responsible for administering Union and State election processes in India. The body administers elections to the Lok Sabha, Rajya Sabha, State Legislative Assemblies in India, and the offices of the President and Vice President in the country. </strong></marquee>
+</section>
+	<section class="center" style="max-height: 400px;">
+		<img src="https://pbs.twimg.com/media/E73W5eUVEAEX2SY.jpg:large" style="width: 100%; max-height:580px; min-height:350px"/>
+		<!-- <img src="https://old.eci.gov.in/uploads/monthly_2019_12/small.6.jpg.e41c429ea155b533c8bb7ce7ca68a97d.jpg" style="height: auto;"/> -->
+	</section>
+</body>
+
+</html>

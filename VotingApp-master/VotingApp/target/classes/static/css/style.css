@@ -1,0 +1,54 @@
+body{
+  background-image: url("https://www.newsclick.in/sites/default/files/styles/amp_1200x675_16_9/public/2023-08/election%20commision27.png?itok=Eg5MQEFw");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+.active {
+  background-color: #04AA6D;
+}
+
+.center {
+	margin-top: 3mm;
+   text-align: center;
+  border: 1px solid green;
+}
+
+}
+.chatContainer{
+  position: absolute;
+  right: 50px;
+  bottom: 60px;
+
+}
+.chatContainer>button{
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: lightgreen;
+}
